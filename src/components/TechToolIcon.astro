@@ -1,0 +1,27 @@
+---
+import { Image } from "astro:assets";
+import TsLogo from "~/assets/logos/ts-logo-round-128.svg";
+import ReactLogo from "~/assets/logos/react-logo.svg";
+import NextJsLogo from "~/assets/logos/next-js-logo.svg";
+import GoLogo from "~/assets/logos/go-logo_aqua.svg";
+import PrismaLogo from "~/assets/logos/prisma-logo.svg";
+
+const TECH_TOOLS_MAP = {
+  react: { src: ReactLogo, alt: "React" },
+  typeScript: {
+    src: TsLogo,
+    alt: "TypeScript",
+  },
+  go: { src: GoLogo, alt: "GO" },
+  nextJs: { src: NextJsLogo, alt: "NextJS" },
+  prisma: { src: PrismaLogo, alt: "Prisma" },
+} as const;
+
+interface Props {
+  name: keyof typeof TECH_TOOLS_MAP;
+}
+
+const { name } = Astro.props;
+---
+
+<Image width={24} height={24} {...TECH_TOOLS_MAP[name]} />

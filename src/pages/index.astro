@@ -5,8 +5,8 @@ import Layout from "../layouts/MainLayout.astro";
 
 <Layout title="olzhas dev">
   <main class="w-full">
-    <div class="flex w-full flex-col items-center pt-12">
-      <svg class="w-full">
+    <div class="flex w-full flex-col items-center pt-[25vh]">
+      <svg class="w-full" height="130">
         <text
           id="page-title-overlay"
           x="50%"
@@ -19,17 +19,7 @@ import Layout from "../layouts/MainLayout.astro";
         </text>
       </svg>
 
-      <h2 class="text-3xl">Software Engineer</h2>
-    </div>
-    <div class="flex justify-center pt-8">
-      <div class="grid grid-cols-3 gap-x-6 gap-y-8">
-        <Card title="Test" body="test" />
-        <Card title="Test" body="test" />
-        <Card title="Test" body="test" />
-        <Card title="Test" body="test" />
-        <Card title="Test" body="test" />
-        <Card title="Test" body="test" />
-      </div>
+      <h2 class="font-pix text-3xl">software engineer / web developer</h2>
     </div>
   </main>
 </Layout>
@@ -44,22 +34,22 @@ import Layout from "../layouts/MainLayout.astro";
     25%,
     75% {
       /* fill: rgba(72, 138, 204, 0); */
-      stroke-dashoffset: 50%;
+      stroke-dashoffset: 100%;
       stroke-dasharray: 3% 8%;
     }
 
     50% {
       /* fill: rgba(72, 138, 204, 1); */
-      stroke-dashoffset: 100%;
+      stroke-dashoffset: 0%;
       stroke-dasharray: 4% 6%;
     }
   }
 
   #page-title-overlay {
     /* text-shadow: 0px 0px 2px gray; */
-    stroke: rgba(255, 255, 255, 0.7);
+    stroke: rgb(0, 0, 0);
     stroke-width: 2;
     stroke-dasharray: 2% 5%;
-    animation: titleAnimation 60s ease-in-out infinite;
+    animation: titleAnimation 300s ease infinite;
   }
 </style>

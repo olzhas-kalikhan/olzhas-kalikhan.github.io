@@ -1,3 +1,5 @@
+import { fontFamily } from "tailwindcss/defaultTheme";
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ["class"],
@@ -6,6 +8,7 @@ module.exports = {
   theme: {
     fontFamily: {
       display: ['"Fredericka the Great"', "serif"],
+      pix: ['"Patrick Hand"', "cursive"],
     },
     container: {
       center: true,
