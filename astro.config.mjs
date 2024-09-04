@@ -17,5 +17,5 @@ export default defineConfig({
   image: {
     domains: ["unpkg.com"],
   },
-  site: "https://olzhas.dev/",
+  site: "https://git.olzhas.dev/",
 });
