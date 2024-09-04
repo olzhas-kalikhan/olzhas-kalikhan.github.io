@@ -66,4 +66,10 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  @font-face {
+    font-family: "LucideIcons";
+    src: url(https://unpkg.com/lucide-static@latest/font/Lucide.ttf)
+      format("truetype");
+  }
 }

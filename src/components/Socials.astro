@@ -1,0 +1,35 @@
+---
+import { Button } from "~/react/components/ui/button";
+import CopyButton from "~/react/components/copy-button";
+import Icon from "~/react/components/icon";
+---
+
+<div class="pt-12">
+  <ul class="flex justify-center">
+    <li>
+      <a href="https://github.com/olzhas-kalikhan" target="_blank">
+        <Button client:load variant="link">
+          <Icon iconName="github" className="mr-2" client:load /> Github
+        </Button>
+      </a>
+    </li>
+    <li>
+      <a href="https://www.linkedin.com/in/olzhas-kalikhan/" target="_blank">
+        <Button client:load variant="link">
+          <Icon iconName="linkedin" className="mr-2" client:load />LinkedIn
+        </Button>
+      </a>
+    </li>
+    <li>
+      <a href="mailto:olzhas-kalikhan@outlook.com" target="_blank">
+        <Button client:load variant="link">
+          <Icon iconName="mail" className="mr-2" client:load />Mail
+        </Button>
+      </a>
+      <CopyButton
+        client:only="react"
+        textToCopy="olzhas-kalikhan@outlook.com"
+      />
+    </li>
+  </ul>
+</div>
