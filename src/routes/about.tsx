@@ -1,8 +1,9 @@
-import { createFileRoute } from '@tanstack/react-router'
+import { Button } from "@/components/ui/button";
+import { createFileRoute } from "@tanstack/react-router";
 
-export const Route = createFileRoute('/about')({
+export const Route = createFileRoute("/about")({
   component: About,
-})
+});
 
 function About() {
   return (
@@ -18,6 +19,7 @@ function About() {
           your own routes, styling, and add-ons.
         </p>
       </section>
+      <Button>Test</Button>
     </main>
-  )
+  );
 }
